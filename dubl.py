@@ -2,7 +2,12 @@ import os
 
 
 def g():
-  pass
+    n = input('Введите пут:')
+    if os.path.isdir(n) == True:
+        return n
+    else:
+        g()
+   
 
 
 def dictionary():
